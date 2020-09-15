@@ -11,8 +11,8 @@ export default function ClassCard(props) {
       <div className="card-content">
         <div className="media">
           <div className="media-content">
-            <p className="title is-4">{activity.teacher}</p>
-            <p className="subtitle is-6">{activity.duration}</p>
+            <p className="title is-4">{activity.name}</p>
+            <p className="subtitle is-6">{activity.teacher}</p>
           </div>
         </div>
 

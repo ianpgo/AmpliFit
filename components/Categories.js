@@ -9,8 +9,6 @@ export default function Categories(props) {
     }, {})
   );
 
-  console.log(categories);
-
   return (
     <div className="tabs">
       <ul>
