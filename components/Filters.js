@@ -18,10 +18,13 @@ export default function Filters(props) {
   return (
     <div>
       <div>
-        <div className="title is-4">Difficulty</div>
+        <br />
+        <div className="title is-4" style={{ marginBottom: "6px;" }}>
+          Difficulty
+        </div>
         {difficulties.map((difficulty) => {
           return (
-            <div className="control">
+            <div className="control" key={difficulty}>
               <label className="checkbox">
                 <input type="checkbox" />
                 &nbsp;
@@ -32,12 +35,13 @@ export default function Filters(props) {
         })}
       </div>
       <br />
-      <br />
       <div>
-        <div className="title is-4">Duration</div>
+        <div className="title is-4" style={{ marginBottom: "6px;" }}>
+          Duration
+        </div>
         {durations.map((duration) => {
           return (
-            <div className="control">
+            <div className="control" key={duration}>
               <label className="checkbox">
                 <input type="checkbox" />
                 &nbsp;
