@@ -1,4 +1,4 @@
-@import "../node_modules/bulmaswatch/superhero/bulmaswatch.scss";
+@import "../node_modules/bulmaswatch/darkly/bulmaswatch.scss";
 
 .page-wrapper {
   min-height: calc(100vh - 224px);
@@ -20,7 +20,11 @@
 
 .card {
   &:hover {
-    border: 1px solid white;
+    border-color: white;
     cursor: pointer;
   }
+}
+
+.navbar {
+  border-radius: 0;
 }

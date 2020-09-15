@@ -8,13 +8,15 @@ export default function Home() {
   const [duration, setDuration] = React.useState();
   return (
     <div>
-      <section className="hero is-primary">
+      <section className="hero is-light">
         <div className="hero-body">
           <div className="container">
-            <h1 className="title">Explore Classes</h1>
+            <h1 className="title has-text-centered">Explore Classes</h1>
           </div>
         </div>
       </section>
+      <br />
+      <br />
       <div className="container">
         <Categories current={category} setCategory={setCategory} />
         <div className="tile is-ancestor">

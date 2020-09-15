@@ -2,7 +2,11 @@ import { useRouter } from "next/router";
 
 export default function Header() {
   return (
-    <nav className="navbar" role="navigation" aria-label="main navigation">
+    <nav
+      className="navbar is-light"
+      role="navigation"
+      aria-label="main navigation"
+    >
       <div className="container">
         <div className="navbar-brand">
           <a className="navbar-item" href="https://bulma.io">
