@@ -29,7 +29,11 @@ export default function Home() {
             />
           </div>
           <div className="tile is-10">
-            <Classes category={category} />
+            <Classes
+              category={category}
+              difficulty={difficulty}
+              duration={duration}
+            />
           </div>
         </div>
       </div>

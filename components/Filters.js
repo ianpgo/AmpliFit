@@ -22,13 +22,21 @@ export default function Filters(props) {
         <div className="title is-4" style={{ marginBottom: "6px;" }}>
           Difficulty
         </div>
-        {difficulties.map((difficulty) => {
+        {difficulties.map((difficultyOption) => {
           return (
-            <div className="control" key={difficulty}>
+            <div className="control" key={difficultyOption}>
               <label className="checkbox">
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  checked={difficultyOption === difficulty}
+                  onChange={() =>
+                    setDifficulty(
+                      difficultyOption === difficulty ? null : difficultyOption
+                    )
+                  }
+                />
                 &nbsp;
-                {difficulty}
+                {difficultyOption}
               </label>
             </div>
           );
@@ -39,13 +47,21 @@ export default function Filters(props) {
         <div className="title is-4" style={{ marginBottom: "6px;" }}>
           Duration
         </div>
-        {durations.map((duration) => {
+        {durations.map((durationOption) => {
           return (
-            <div className="control" key={duration}>
+            <div className="control" key={durationOption}>
               <label className="checkbox">
-                <input type="checkbox" />
+                <input
+                  type="checkbox"
+                  checked={durationOption === duration}
+                  onChange={() =>
+                    setDuration(
+                      durationOption === duration ? null : durationOption
+                    )
+                  }
+                />
                 &nbsp;
-                {duration}
+                {durationOption}
               </label>
             </div>
           );
