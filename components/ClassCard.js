@@ -1,8 +1,20 @@
+import { useRouter } from "next/router";
+
 export default function ClassCard(props) {
   const { activity } = props;
+  const router = useRouter();
 
   return (
-    <div className="card">
+    <div
+      className="card"
+      onClick={(e) => {
+        e.preventDefault();
+        // typically you want to use `next/link` for this usecase
+        // but this example shows how you can also access the router
+        // and use it manually
+        router.push(`/classes/${activity.id}`);
+      }}
+    >
       <div className="card-image">
         <figure className="image is-4by3">
           <img src={activity.images[0]} alt="Placeholder image" />

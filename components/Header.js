@@ -2,8 +2,8 @@ import { useRouter } from "next/router";
 
 export default function Header() {
   return (
-    <div className="container">
-      <nav className="navbar" role="navigation" aria-label="main navigation">
+    <nav className="navbar" role="navigation" aria-label="main navigation">
+      <div className="container">
         <div className="navbar-brand">
           <a className="navbar-item" href="https://bulma.io">
             AmpliFit
@@ -37,8 +37,8 @@ export default function Header() {
             </div>
           </div>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 }
 
