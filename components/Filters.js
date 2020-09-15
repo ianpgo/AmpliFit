@@ -18,22 +18,32 @@ export default function Filters(props) {
   return (
     <div>
       <div>
+        <div className="title is-4">Difficulty</div>
         {difficulties.map((difficulty) => {
           return (
-            <label className="checkbox">
-              <input type="checkbox" />
-              {difficulty}
-            </label>
+            <div className="control">
+              <label className="checkbox">
+                <input type="checkbox" />
+                &nbsp;
+                {difficulty}
+              </label>
+            </div>
           );
         })}
       </div>
+      <br />
+      <br />
       <div>
+        <div className="title is-4">Duration</div>
         {durations.map((duration) => {
           return (
-            <label className="checkbox">
-              <input type="checkbox" />
-              {duration}
-            </label>
+            <div className="control">
+              <label className="checkbox">
+                <input type="checkbox" />
+                &nbsp;
+                {duration}
+              </label>
+            </div>
           );
         })}
       </div>

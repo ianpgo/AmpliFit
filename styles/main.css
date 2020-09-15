@@ -1,13 +1,17 @@
 .page-wrapper {
-  min-height: calc(100vh - 224px)
+  min-height: calc(100vh - 224px);
+  padding-bottom: 80px;
 }
 
 .classes-wrapper {
   display: flex;
+  width: 100%;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: left;
 }
 .card-wrapper {
   display: flex;
   width: 32%;
+  margin-bottom: 1%;
+  margin-left: 1%;
 }
